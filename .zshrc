@@ -72,5 +72,10 @@ export LESSCHARSET=utf-8
 
 # 依存パッケージ
 
-# init zprezto
-# source "${ZDOTDIR:-$HOME}"/.zprezto/init.zsh
+# Source fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
