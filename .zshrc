@@ -40,6 +40,10 @@ setopt correct
 # 補間で大文字マッチ
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# プロンプト
+PROMPT='%n@%m %~
+# '
+
 # backspace deleteキーを有効
 stty erase '^H'
 bindkey "^[[3~" delete-char
@@ -61,13 +65,6 @@ export LESSCHARSET=utf-8
 #-----------------------------------
 
 # 共通設定
-
-# Window側に開発フォルダ作成
-# DEV=/mnt/c/Users/$WIDNOWS_USER_NAME/Develop
-
-# リポジトリのrcファイルをdownloadする
-# alias synczshdownload='cp $DEV/zsh/prompt_wikimatze_setup  ~/.zprezto/modules/prompt/functions/prompt_wikimatze_setup && cp $DEV/zsh/.zshrc ~/.zshrc && cp $DEV/zsh/.zpreztorc ~/.zpreztorc && source ~/.zshrc && source ~/.zpreztorc && echo ".zshrc .zpreztorcを同期しました！"'
-
 # set dircolors
 # eval `dircolors ~/dircolors_themes/dircolors-solarized/dircolors.256dark` # coreutils
 
