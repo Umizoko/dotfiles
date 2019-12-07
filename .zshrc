@@ -55,6 +55,9 @@ setopt correct
 # フローコントロール無効
 setopt no_flow_control
 
+# lessの文字コード設定
+export LESSCHARSET=utf-8
+
 #-----------------------------------
 
 # 共通設定
