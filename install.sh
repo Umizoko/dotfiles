@@ -1,6 +1,7 @@
 #...
 
 DOTPATH=~/dotfiles
+cd $DOTPATH
 
 for f in .??*
 do
