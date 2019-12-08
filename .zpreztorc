@@ -59,7 +59,7 @@ zstyle ':prezto:module:autosuggestions:color' found 'fg=242'
 
 # Set the entries to ignore in static *random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'giddie'
+zstyle ':prezto:module:prompt' theme 'steeef'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -110,7 +110,7 @@ zstyle ':prezto:module:screen:auto-start' local 'yes'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-#zstyle ':prezto:module:syntax-highlighting' color 'yes'
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
 zstyle ':prezto:module:syntax-highlighting' highlighters \
   'main' \
   'brackets' \
@@ -158,7 +158,7 @@ zstyle ':prezto:module:tmux:auto-start' local 'yes'
 zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 # Set the default session name:
 zstyle ':prezto:module:tmux:session' name 'YOUR DEFAULT SESSION NAME'
