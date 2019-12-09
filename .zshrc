@@ -62,11 +62,19 @@ setopt no_flow_control
 # lessの文字コード設定
 export LESSCHARSET=utf-8
 
+# ファイル名を日本語で表示
+setopt print_eight_bit
+
 #-----------------------------------
 
 # 共通設定
 # set dircolors
 # eval `dircolors ~/dircolors_themes/dircolors-solarized/dircolors.256dark` # coreutils
+
+# 環境変数
+if [ -f ~/.zshrc.local ]; then
+	source ~/.zshrc.local
+fi
 
 #-----------------------------------
 
