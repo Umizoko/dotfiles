@@ -4,10 +4,12 @@
 
 - git
 - tmux
+- tmux-plugin
 - zsh
 - prezto
 - fzf
 - peco
+- vim
 
 ### HOW TO USE
 
