@@ -35,6 +35,9 @@ export LANG="ja_JP.UTF-8"
 # cdコマンドを省略、ディレクトリ名だけで移動
 setopt auto_cd
 
+# 移動後ファイルを表示
+function chpwd() { ls -la }
+
 # コマンドミスを修正
 setopt correct
 
@@ -81,10 +84,10 @@ fi
 
 # 依存パッケージ
 
-# Source fzf
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Source Prezto.
+# prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
