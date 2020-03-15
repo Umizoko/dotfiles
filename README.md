@@ -1,6 +1,6 @@
 # DOTFILES
 
-### MODULE
+### REQUIRED PACKAGE
 
 - git
 - tmux
