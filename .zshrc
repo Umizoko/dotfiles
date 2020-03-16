@@ -72,8 +72,10 @@ setopt print_eight_bit
 #-----------------------------------
 
 # 共通設定
-# set dircolors
-# eval `dircolors ~/dircolors_themes/dircolors-solarized/dircolors.256dark` # coreutils
+# dircolors
+if which dircolors > /dev/null; then
+  eval `dircolors $HOME/.dir_colors`
+fi
 
 # 環境変数
 if [ -f ~/.zshrc.local ]; then
