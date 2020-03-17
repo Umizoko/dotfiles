@@ -1,0 +1,42 @@
+[core]
+    excludesfile = ~/.gitignore
+    preloadindex = true
+    editor       = vim
+
+[color]
+    ui = auto
+
+[color "diff"]
+    # http://qiita.com/qurage/items/452f2debb64e2708a46c
+    meta    = 242 238
+    frag    = 239 236
+    old     = 167 normal
+    new     = 030 normal
+    context = 240
+    commit  = 246 024
+
+[alias]
+    graph           = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
+    review          = diff origin/master...
+    review-files    = diff origin/master... --name-only
+    lg              = log --color=always --max-count=10 --oneline origin/master...
+
+[help]
+    autocorrect = 1
+
+[user]
+    name  = Maruyama Kai
+    email = kai.maruyama@claves.co.jp
+
+[pager]
+    log  = diff-highlight | less -RX
+    show = diff-highlight | less -RX
+    diff = diff-highlight | less -RX
+
+[diff]
+    tool                = vimdiff
+    algorithm           = histogram
+    compactionHeuristic = true
+
+[merge]
+    tool = vimdiff
