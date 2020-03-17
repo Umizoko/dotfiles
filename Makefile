@@ -10,7 +10,7 @@ all:
 list: ## Show dot files in this repo
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
-install: ## Create symlink to home directory
+init: ## Create symlink to home directory
 	@echo 'Copyright (c) 2020 UMIZOKO All Rights Reserved.'
 	@echo '==> Start to deploy dotfiles to home directory.'
 	@echo ''
@@ -19,7 +19,7 @@ install: ## Create symlink to home directory
 clean: ## Remove the dot files and this repo
 	@echo 'Remove dot files in your home directory...'
 	@-$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
-	#-rm -rf $(DOTPATH)
+	-rm -rf $(DOTPATH)
 
 help: ## Self-documented Makefile
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
