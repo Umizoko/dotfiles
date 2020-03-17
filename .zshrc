@@ -1,5 +1,8 @@
 # 共通設定
 
+# alias
+alias ls='ls --color=auto'
+
 # viキーバインド
 bindkey -v
 
