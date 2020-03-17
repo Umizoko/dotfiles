@@ -16,11 +16,11 @@
     commit  = 246 024
 
 [alias]
-    graph           = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
-    review          = diff origin/master...
-    review-files    = diff origin/master... --name-only
-    lg              = log --color=always --max-count=10 --oneline origin/master...
-
+    #graph           = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
+    #review          = diff origin/master...
+    #review-files    = diff origin/master... --name-only
+    #lg              = log --color=always --max-count=10 --oneline origin/master...
+    ls = log --topo-order --stat --pretty=format:'%C(bold)Commit:%C(reset) %C(green)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
 [help]
     autocorrect = 1
 
