@@ -20,3 +20,4 @@ $ make install
 - fzf
 - peco
 - vim
+- diff-so-fancy
