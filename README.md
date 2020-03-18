@@ -7,7 +7,7 @@ $ git clone https://github.com/Umizoko/dotfiles.git
 
 $ cd ~/dotfiles
 
-$ make install
+$ make init
 ```
 
 ### REQUIRED PACKAGE
@@ -20,4 +20,3 @@ $ make install
 - fzf
 - peco
 - vim
-- diff-so-fancy
