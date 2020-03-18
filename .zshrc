@@ -105,3 +105,10 @@ function peco-history-selection() {
 }
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
+
+# diff-so-fancy
+if [ -f $HOME/dotfiles/diff-so-fancy/diff-so-fancy ]; then
+  export PATH="$PATH:$HOME/dotfiles/diff-so-fancy"
+else
+  echo "Cloud not find package $HOME/dotfiles/diff-so-fancy"
+fi
