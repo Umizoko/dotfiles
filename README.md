@@ -20,3 +20,14 @@ $ make init
 - fzf
 - peco
 - vim
+
+# How to build vim
+
+## Required package
+- gcc
+- libncurses5-dev
+
+## Usage
+$ cd vim/src
+$ make
+$ make install
