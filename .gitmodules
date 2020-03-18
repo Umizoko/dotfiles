@@ -1,3 +1,6 @@
-[submodule "diff-so-fancy"]
-	path = diff-so-fancy
+[submodule "module/diff-so-fancy"]
+	path = module/diff-so-fancy
 	url = https://github.com/so-fancy/diff-so-fancy
+[submodule "module/vim"]
+	path = module/vim
+	url = https://github.com/vim/vim.git
