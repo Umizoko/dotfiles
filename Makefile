@@ -1,5 +1,6 @@
 DOTPATH    := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
-CANDIDATES := $(wildcard .??*) bin
+CANDIDATES := $(wildcard .??*)
+# CANDIDATES := $(wildcard .??*) bin
 EXCLUSIONS := .DS_Store .git .gitmodules .travis.yml
 DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
@@ -12,7 +13,7 @@ list: ## Show dot files in this repo
 
 init: ## Create symlink to home directory
 	@echo 'Copyright (c) 2020 UMIZOKO All Rights Reserved.'
-	@echo '==> Start to deploy dotfiles to home directory.'
+	@echo '==> Start to create symlink of dotfiles to home directory.'
 	@echo ''
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 
