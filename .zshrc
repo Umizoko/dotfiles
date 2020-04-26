@@ -112,3 +112,8 @@ if [ -f $HOME/dotfiles/module/diff-so-fancy/diff-so-fancy ]; then
 else
   echo "Cloud not find package $HOME/dotfiles/module/diff-so-fancy"
 fi
+
+# kubernetes補完
+if [ $commands[kubectl] ]; then 
+  source <(kubectl completion zsh);
+fi
