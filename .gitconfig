@@ -24,8 +24,8 @@
     autocorrect = 1
 
 [user]
-    name  = Maruyama Kai
-    email = kai.maruyama@claves.co.jp
+    name  = umizoko
+    email = 0123mark3210@gmail.com
 
 [pager]
     log  = diff-so-fancy | less -RX
